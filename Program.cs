@@ -14,15 +14,11 @@ namespace Arrays
             //create an array to isplay
             int[] numArray = new int[25];
 
-            //create an integer value to display the iteration the for loop will be in
-            int pop_Array = 1;
-
             //a for loop to display each element within the created array
-            for(int count = 0; count < 25; count++)
+            for(int count = 1; count <= 25; count++)
             {
-                numArray[count] = pop_Array;
-                Console.WriteLine("Element value = " + pop_Array.ToString());
-                pop_Array++;
+                numArray[count - 1] = count;
+                Console.WriteLine("Element value = " + numArray[count-1].ToString());
             }
 
             //to allow user to press any key to exit program
